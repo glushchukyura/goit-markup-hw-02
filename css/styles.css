@@ -1,9 +1,15 @@
+:root{
+    --accent-color: #2196F3; /*колір акцентів, частини логотипу, фону кнопок*/
+    --text-color: #757575; /*колір вторинного тексту*/
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: #212121;
+    background: #F5F5F5;;
 }
 
-.visually-hidden, .filter-title, .projects-all {
+.visually-hidden {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -17,7 +23,7 @@ body {
 }
 
 .navigation-list,
-.header-list,
+.contacts-list,
 .principles-list,
 .tasks-list,
 .team-list,
@@ -28,8 +34,13 @@ body {
 }
 
 /*--------HEADER---------*/
+
+.header{
+    background: #FFFFFF;
+}
+
 .logo-web-element {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .logo-studio-element {
@@ -46,8 +57,6 @@ body {
 }
 
 .navigation-item {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
@@ -60,18 +69,16 @@ link:visited {
     color: inherit
 }
 
-.navigation-link:hover, .navigation-link:focus, .header-link:hover, .header-link:focus {
-    color: #2196F3;
+.navigation-link:hover, .navigation-link:focus, .contact-link:hover, .contact-link:focus {
+    color: var(--accent-color);
 }
 
-.header-item {
-font-family: 'Roboto';
-    font-style: normal;
+.contact-item {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--text-color);
 }
 
 /*---------HERO--------*/
@@ -90,12 +97,11 @@ font-family: 'Roboto';
 }
 
 .hero-btn {
-    background: #2196F3;
+    background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-}
-
-.hero-btn-text {
+    border-width: 0px;
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -104,6 +110,7 @@ font-family: 'Roboto';
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 /*---------PRINCIPLES-------------*/
@@ -120,11 +127,10 @@ font-family: 'Roboto';
 }
 
 .principles-after-title{
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--text-color);
 }
 
 /*-------tasks-----------*/
@@ -149,12 +155,11 @@ font-family: 'Roboto';
 }
 
 .member-title{
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--text-color);
 }
 
 /*-----------footer------------*/
@@ -162,7 +167,7 @@ font-family: 'Roboto';
     background: #2F303A;
 }
 
-.address-link{
+.map-link{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -189,9 +194,7 @@ font-family: 'Roboto';
 .filter-btn{
     background: #F5F4FA;
     border-radius: 4px;
-}
-
-.filter-btn-text{
+    border-width: 0px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -200,15 +203,13 @@ font-family: 'Roboto';
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    cursor: pointer;
 }
 
 .filter-btn:hover, .filter-btn:focus{
-        background: #2196F3;
+        background: var(--accent-color);
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
         border-radius: 4px;
-}
-
-.filter-btn-text:hover, .filter-btn-text:focus{
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
@@ -236,5 +237,5 @@ font-family: 'Roboto';
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--text-color);
 }
